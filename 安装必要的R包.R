@@ -1,0 +1,27 @@
+rm(list = ls())
+update.packages(checkBuilt=TRUE, ask=FALSE)
+
+BiocManager::install("SingleCellExperiment")
+BiocManager::install("ensembldb")
+BiocManager::install("multtest")
+BiocManager::install("glmGamPoi")
+
+install.packages("tidyverse")
+install.packages("Matrix")
+install.packages("RCurl")
+install.packages("scales")
+install.packages("cowplot")
+install.packages("BiocManager")
+install.packages("Seurat")
+install.packages("metap")
+
+library(Seurat)
+library(tidyverse)
+library(Matrix)
+library(RCurl)
+library(scales)
+library(cowplot)
+library(SingleCellExperiment)
+library(AnnotationHub)
+library(ensembldb)
+
